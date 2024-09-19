@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        form {
+            background-color: white;
+            padding: 60px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 500px;
+        }
+        input {
+            width: 53.5vh;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <form action="/registrati" method="GET">
+        <h2>Registrazione</h2>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="surname">Cognome:</label>
+        <input type="text" id="surname" name="surname" required>
+
+        <label for="maschio">Maschio</label>
+        <input type="radio" id="maschio" name="sesso" value="1">
+        
+        <label for="femmina">Femmina</label>
+        <input type="radio" id="femmina" name="sesso" value="2">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+       <button type="submit">Registrati</button>
+    </form>
+    <a href="/login"><h1>LOGIN</h1></a>
+</body>
+</html>
